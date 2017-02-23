@@ -7,7 +7,7 @@ Given a list of values, e.g., `[0,1,2,1,1,2,3]`, imagine that the magnitude of e
 
 ![Small example with no puddle](/no_puddle.png?raw=true)
 
-Now, using a list with 1000 elements, imagine a downpour of 2D rain, and the pools of water that would eventually come into place.
+Now, using a list with 1000 elements, imagine a downpour of 2D rain and the pools of water that would eventually come into place.
 
 ![example with piddle](/side_by_side.png?raw=true)
 
