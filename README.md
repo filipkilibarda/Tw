@@ -1,5 +1,5 @@
 # Twitter Puddle Problem
-My solution to the [Twitter Puddle Problem](http://puzzles.bostonpython.com/puddle.html). Thanks to Bostonpython.com.
+My solution to the [Twitter Puddle Problem](http://puzzles.bostonpython.com/puddle.html). Thanks to [BostonPython](http://puzzles.bostonpython.com/puddle.html) for providing this awesome puzzle.
 
 Problem Description
 ----
