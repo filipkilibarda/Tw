@@ -7,11 +7,10 @@ You're given a list of values, e.g., `[0,1,2,1,1,2,3]`. Now imagine the magnitud
 
 ![Small example with no puddle](/no_puddle.png?raw=true)
 
-And here's one using a list with 1000 elements.
+Now, using a list with 1000 elements, imagine a downpour of 2D rain, and the pools of water that would eventually come into place.
 
 ![Big example with no puddle](/big_no_puddle.png?raw=true)
 
-Now imagine a downpour of 2D rain, and the pools of water that would eventually come into place.
 
 ![example with piddle](/side_by_side.png?raw=true)
 
