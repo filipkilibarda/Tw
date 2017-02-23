@@ -85,6 +85,24 @@ create_puddles(matrix)
 # create_puddles(matrix)
 
 # make a color map of fixed colors
+fig = plt.figure()
+# -------------------------------
+# Plot 1
+# -------------------------------
+ax = fig.add_subplot(121)
+cmap = colors.ListedColormap([
+    "#ffffff",
+    "#D4C26A",
+    "#ffffff",
+    # "#7788AA",
+    ])
+norm = colors.BoundaryNorm([-1.5,-.5,.5,1.5], cmap.N)
+ax.imshow(matrix,cmap=cmap,norm=norm)
+ax.axis("off")
+# -------------------------------
+# Plot 2
+# -------------------------------
+ax = fig.add_subplot(122)
 cmap = colors.ListedColormap([
     "#ffffff",
     "#D4C26A",
@@ -92,8 +110,8 @@ cmap = colors.ListedColormap([
     "#7788AA",
     ])
 norm = colors.BoundaryNorm([-1.5,-.5,.5,1.5], cmap.N)
-plt.imshow(matrix,cmap=cmap,norm=norm)
-plt.axis("off")
-plt.savefig("puddle.png",bbox_inches='tight',figsize=(2,2))
+ax.imshow(matrix,cmap=cmap,norm=norm)
+ax.axis("off")
+# fig.savefig("puddle.png",bbox_inches='tight',figsize=(2,2))
 plt.show()
 
