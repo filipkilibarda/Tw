@@ -11,10 +11,12 @@ And here's one using a list with 1000 elements.
 
 ![Big example with no puddle](/big_no_puddle.png?raw=true)
 
-Now imagine that a lot of 2D rain falls on this surface and pools up in some area.
+Now imagine a downpour of 2D rain, and the pools of water that would eventually come into place.
 
 ![example with piddle](/puddle.png?raw=true)
 
-Initial Attempts
+*Question* After sufficient rainfall such that all the puddles are completely full, how much water has pooled on the 2D surface? I.e., how much area does the water take up.
+
+Solution
 ----
-![Example with puddle](/puddle1.png?raw=true)
+The solution lies in a simple realization, that when viewed from the perspective of each *cell* of water, only those *cells* that have a wall on their left and right hand sides, will contain water in them. All cells that do not contain a wall on both their right and left hand sides will eventually drain out as there's nothing to keep the water in.
