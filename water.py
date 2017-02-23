@@ -88,12 +88,12 @@ create_puddles(matrix)
 cmap = colors.ListedColormap([
     "#ffffff",
     "#D4C26A",
-    "#ffffff",
-    # "#7788AA",
+    # "#ffffff",
+    "#7788AA",
     ])
 norm = colors.BoundaryNorm([-1.5,-.5,.5,1.5], cmap.N)
 plt.imshow(matrix,cmap=cmap,norm=norm)
 plt.axis("off")
-plt.savefig("big_no_puddle.png",bbox_inches='tight',figsize=(2,2))
+plt.savefig("puddle.png",bbox_inches='tight',figsize=(2,2))
 plt.show()
 
