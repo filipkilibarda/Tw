@@ -68,11 +68,15 @@ def f(x):
     """
     Suggested domain: x in [0,5.5]
     """
-    sin(x) + sin(2*x) + sin(3*x) + sin(4*x) + .02*sin(44*x) + .05*sin(54*x) + 4 - 2*exp(-(x-3)**2) + 2*exp(-(x-3.5)**2/.2) + 1.2*exp(-(x-1.8)**2/.2)
-    return x
+    returnVal = 100*sin(1/400*x) + 400*exp(-(x-400)**2/900)
+    returnVal += 200*exp(-(x-600)**2/10**4)  + 200*exp(-(x-900)**2/10**3)
+    returnVal += 100*exp(-(x-700)**2/10**3) + 20*sin(1/18*x)
+    returnVal -= 175*exp(-(x+25)**2/10**3)
+    returnVal -= 100*exp(-(x-1025)**2/10**3)
+    return math.floor(returnVal) + 100
 
-lst = [4,5,0,0,6,6,7,8,1,1,1,3,3,3,2,2,2]
-# lst = [f(x) for x in np.arange(0,5.5,.2)]
+# lst = [4,5,0,0,6,6,7,8,1,1,1,3,3,3,2,2,2]
+lst = [f(x) for x in range(1000)]
 matrix = createMatrix(lst)
 create_puddles(matrix)
 
