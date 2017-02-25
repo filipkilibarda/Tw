@@ -9,7 +9,7 @@ Given a list of values, e.g., `[0,1,2,1,1,2,3]`, imagine that the magnitude of e
 
 Now, using a list with 1000 elements, imagine a downpour of 2D rain and the pools of water that would eventually come into place.
 
-![example with piddle](/pngs/side_by_side.png?raw=true)
+![example with puddles](/pngs/side_by_side.png?raw=true)
 
 **Question** After sufficient rainfall such that all the puddles are completely full, how much water has pooled on the 2D surface? I.e., how much area does the water take up.
 
