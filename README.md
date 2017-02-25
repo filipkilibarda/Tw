@@ -55,4 +55,24 @@ def trim(row):
         del row[-1]
 ```
 
-Sum up the resulting lists and you're done. Might be fun to turn this into a 3D  problem and make a cool graphic, although the principle would be exactly the same.
+Sum up the resulting lists and you're done. 
+
+```python
+lst = [4,5,0,0,6,6,7,8,1,1,1,3,3,3,2,2]
+matrix = createMatrix(lst)
+for row in matrix: print([" " if x==1 else "X" for x in row])
+area_puddle = count_puddle(matrix)
+print("area of the puddle is %s" % area_puddle)
+
+[' ', ' ', ' ', ' ', ' ', ' ', ' ', 'X', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
+[' ', ' ', ' ', ' ', ' ', ' ', 'X', 'X', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
+[' ', ' ', ' ', ' ', 'X', 'X', 'X', 'X', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
+[' ', 'X', ' ', ' ', 'X', 'X', 'X', 'X', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
+['X', 'X', ' ', ' ', 'X', 'X', 'X', 'X', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
+['X', 'X', ' ', ' ', 'X', 'X', 'X', 'X', ' ', ' ', ' ', 'X', 'X', 'X', ' ', ' ']
+['X', 'X', ' ', ' ', 'X', 'X', 'X', 'X', ' ', ' ', ' ', 'X', 'X', 'X', 'X', 'X']
+['X', 'X', ' ', ' ', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X']
+area of the puddle is 16
+```
+
+Might be fun to turn this into a 3D  problem and make a cool graphic, although the principle would be exactly the same.
