@@ -1,13 +1,13 @@
 # Twitter Puddle Problem
-My solution to the Twitter Puddle Problem as found on [here](http://puzzles.bostonpython.com/puddle.html).
+My solution to the [Twitter Puddle Problem](http://puzzles.bostonpython.com/puddle.html). Thanks to [BostonPython](http://puzzles.bostonpython.com/puddle.html) for providing this awesome puzzle.
 
 Problem Description
 ----
-You're given a list of values, e.g., `[0,1,2,1,1,2,3]`. Now imagine the magnitude of each value corresponds to the height of a 2D surface.
+Given a list of values, e.g., `[0,1,2,1,1,2,3]`, imagine that the magnitude of each value corresponds to the height of a 2D surface. Brown squares correspond to the surface, while white squares correspond to empty space.
 
 ![Small example with no puddle](/no_puddle.png?raw=true)
 
-Now, using a list with 1000 elements, imagine a downpour of 2D rain, and the pools of water that would eventually come into place.
+Now, using a list with 1000 elements, imagine a downpour of 2D rain and the pools of water that would eventually come into place.
 
 ![example with piddle](/side_by_side.png?raw=true)
 
@@ -15,4 +15,4 @@ Now, using a list with 1000 elements, imagine a downpour of 2D rain, and the poo
 
 Solution
 ----
-The solution lies in a simple realization, that when viewed from the perspective of each *cell* of water, only those cells that have a wall on their left and right hand sides, will contain water in them. All cells that do not contain a wall on both their right and left hand sides will eventually drain out as there's nothing to keep the water in.
+The solution lies in a simple realization. When viewed from the perspective of each *cell* of water, only those cells that have a wall on their left and right hand sides, will contain water in them. All cells that do not contain a wall on both their right and left hand sides will eventually drain out as there's nothing to keep the water in.
