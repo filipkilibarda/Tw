@@ -32,7 +32,7 @@ def createMatrix(lst):
     return newMatrix
 ```
 
-This will create something like this, where I've replaced 
+`createMatrix(lst)` will convert the list into this matrix, where you can see the surface outlined in `0`s.
 
 ```python
 [1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1]
@@ -44,3 +44,15 @@ This will create something like this, where I've replaced
 [0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0]
 [0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 ```
+
+Now trim off all `1`s that don't have a 0 on both their left and right
+
+```python
+def trim(row):
+    while row[0]==1:
+        del row[0]
+    while row[-1]==1:
+        del row[-1]
+```
+
+Sum up the resulting lists and you're done. Might be fun to turn this into a 3D  problem and make a cool graphic, although the principle would be exactly the same.
