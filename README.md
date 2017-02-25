@@ -32,7 +32,7 @@ def createMatrix(lst):
     return newMatrix
 ```
 
-`createMatrix(lst)` will convert the list into this matrix, where you can see the surface outlined in `0`s.
+`createMatrix(lst)` will convert the list, `lst` into a matrix, where you can see the surface outlined in `0`s.
 
 ```python
 [1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1]
