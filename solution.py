@@ -36,6 +36,7 @@ A test
 """
 lst = [4,5,0,0,6,6,7,8,1,1,1,3,3,3,2,2]
 matrix = createMatrix(lst)
+for row in matrix: print(row)
 for row in matrix: print([" " if x==1 else "X" for x in row])
 area_puddle = count_puddle(matrix)
 print("area of the puddle is %s" % area_puddle)
