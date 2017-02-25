@@ -16,3 +16,18 @@ Now, using a list with 1000 elements, imagine a downpour of 2D rain and the pool
 Solution
 ----
 The solution lies in a simple realization. When viewed from the perspective of each *cell* of water, only those cells that have a wall on their left and right hand sides, will contain water in them. All cells that do not contain a wall on both their right and left hand sides will eventually drain out as there's nothing to keep the water in.
+
+So, first create a 2D matrix corresponding to the situtation described above, where cells equal to `0` are the surface and cells equal to `1` are either water or air.
+
+```python
+def createMatrix(lst):
+    height = max(lst)
+    matrix = []
+    for num in lst:
+        row = [1]*height
+        row[:num] = [0]*num
+        matrix.append(row)
+    newMatrix = [list(row) for row in zip(*matrix)]
+    newMatrix = newMatrix[::-1]
+    return newMatrix
+```
